@@ -22,10 +22,15 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
   it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
     cy.login(dados.usuario, dados.senha)
-    cy.fazerPedido('Vulcan Weightlifting Tank', 'L', 'Black', 1)
-    cy.fazerPedido('Typhon Performance Fleece-lined Jacket', 'L', 'Black', 1)
-    cy.fazerPedido('Zoltan Gym Tee', 'L', 'Blue', 1)
-    cy.fazerPedido('Zeppelin Yoga Pant', 36, 'Blue', 1)
+    cy.adicionarProduto('Vulcan Weightlifting Tank', 'L', 'Black', 1)
+    cy.adicionarProduto(
+      'Typhon Performance Fleece-lined Jacket',
+      'L',
+      'Black',
+      1
+    )
+    cy.adicionarProduto('Zoltan Gym Tee', 'L', 'Blue', 1)
+    cy.adicionarProduto('Zeppelin Yoga Pant', 36, 'Blue', 1)
     cy.addcarrinho()
     cy.faturamento(
       faturar[2].nome,
@@ -41,6 +46,10 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
       faturar[2].email,
       faturar[2].infoadd
     )
-    cy.validarPedido()
+    cy.get('.woocommerce-notice').should(
+      'contain',
+      'Obrigado. Seu pedido foi recebido.'
+    )
+    cy.screenshot()
   })
 })
