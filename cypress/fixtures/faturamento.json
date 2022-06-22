@@ -1,0 +1,46 @@
+[
+{
+  "nome": "Dhionathas",
+  "sobrenome": "Félix",
+  "empresa": "FAROL",
+  "pais":"Brasil",
+  "endereco": "av. marechal rondon",
+  "numero":"32323",
+  "cidade": "Rolim de moura",
+  "estado": "Rondônia",
+  "CEP": "76940-970",
+  "telefone": "984349538",
+  "email": "flx@teste.com",
+  "infoadd": "entregar em horario comercial"
+},
+
+{
+  "nome": "João",
+  "sobrenome": "Aurelio",
+  "empresa": "EBAC",
+  "pais":"Brasil",
+  "endereco": "av. 25 de agosto",
+  "numero":"32323",
+  "cidade": "Cacoal",
+  "estado": "Rondônia",
+  "CEP": "76940-970",
+  "telefone": "984349538",
+  "email": "aurelio@gmail.br",
+  "infoadd": "sem add"
+},
+
+{
+  "nome": "marcos",
+  "sobrenome": "da silva",
+  "empresa": "Eulabs",
+  "pais":"Brasil",
+  "endereco": "centro da cidade",
+  "numero":"32323",
+  "cidade": "Rolim de moura",
+  "estado": "Rondônia",
+  "CEP": "76940-970",
+  "telefone": "984349538",
+  "email": "mascos@teste.com",
+  "infoadd": "atras do mercado"
+}
+]
